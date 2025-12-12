@@ -72,3 +72,14 @@ data:
   CLAMAV_ENABLED: {{ .Values.clamAv.enabled | quote }}
   CLAMAV_HOST: {{ .Values.clamAv.host | quote }}
   CLAMAV_PORT: {{ .Values.clamAv.port | quote }}
+
+  OIDC_ENABLED: {{ .Values.oidc.enabled | quote }}
+  OIDC_LOCAL_AUTHENTICATION_ENABLED: {{ .Values.oidc.localAuthenticationEnabled | quote }}
+  OIDC_NAME: {{ .Values.oidc.name | quote }}
+  OIDC_ISSUER: {{ .Values.oidc.issuer | quote }}
+  OIDC_IDENTIFIER: {{ .Values.oidc.identifier | quote }}
+  OIDC_SECRET: {{ .Values.oidc.secret | quote }}
+  OIDC_SCOPES: {{ .Values.oidc.scopes | quote }}
+  OIDC_UID_FIELD: {{ .Values.oidc.uidField | quote }}
+  OIDC_EMAIL_ADDRESS_FIELD: {{ .Values.oidc.emailAddressField | quote }}
+  OIDC_NAME_FIELD: {{ .Values.oidc.nameField | quote }}

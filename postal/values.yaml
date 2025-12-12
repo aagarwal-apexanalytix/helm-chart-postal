@@ -416,3 +416,15 @@ jobs:
     tolerations: []
 
     affinity: {}
+
+oidc:
+  enabled: false
+  localAuthenticationEnabled: true
+  name: "Keycloak"
+  issuer: "https://your-idp.example.com/realms/your-realm"
+  identifier: "your-client-id"
+  secret: "your-client-secret"
+  scopes: "openid email profile"
+  uidField: "sub"
+  emailAddressField: "email"
+  nameField: "name"
